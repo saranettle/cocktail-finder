@@ -49,8 +49,8 @@ def alcohol(alcohol):
 
 @app.route('/Other')
 def other():
-        cocktails = Cocktail.query.all()
-        return render_template('other.html', cocktails=cocktails)
+    cocktails = Cocktail.query.all()
+    return render_template('other.html', cocktails=cocktails)
 
 
 @app.route('/drink/<name>')

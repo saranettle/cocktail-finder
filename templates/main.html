@@ -41,11 +41,7 @@
 
   <div class="col-sm-12 col-md-9">
     {% for cocktail in cocktails %}
-
-
-          <a class="drinkSquare {{ cocktail.alcohol }}" href="/drink/{{ cocktail.name }}"> {{ cocktail.name }}</a>
-
-
+      <a class="drinkSquare {{ cocktail.alcohol }}" href="/drink/{{ cocktail.name }}"> {{ cocktail.name }}</a>
     {% endfor %}
   </div>
 </div>
