@@ -1,0 +1,36 @@
+{% extends "bootstrap/base.html" %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="../static/css/drink.css">
+{% endblock %}
+{% block title %}Drink Information for {{ name }}{% endblock %}
+
+{% block content %}
+
+  <div class="row">
+    <div class="col-sm-0 col-md-3">
+    </div>
+
+    <div class="col-sm-12 col-md-9">
+      <h1 class="{{ drink.alcohol }}">
+          {{ name }}
+      </h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+      <a href="/" id="back">Go Back</a>
+    </div>
+
+    <div class="col-sm-12 col-md-9">
+      <h2>Primary Alcohol: {{ drink.alcohol }}</h2>
+
+      <p>Ingredients</p>
+      <p>{{drink.ingredients}}</p>
+
+    </div>
+  </div>
+
+
+{% endblock %}
