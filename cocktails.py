@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'some secret string here'
 
 userpass = 'mysql://saranettle:pato1117@'
-saranettle.mysql.pythonanywhere-services.com
+basedir = saranettle.mysql.pythonanywhere-services.com
 dbname   = '/saranettle$cocktailsdb'
 app.config['SQLALCHEMY_DATABASE_URI'] = userpass + basedir + dbname
 
@@ -60,5 +60,5 @@ def drinks(name):
     return render_template('drink.html', cocktails=cocktails, name=name, drink=drink)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#    app.run(debug=True)
