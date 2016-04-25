@@ -9,9 +9,9 @@ from flask.ext.sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'some secret string here'
 
-userpass = 'mysql://saranettle:pato1117@'
-basedir = saranettle.mysql.pythonanywhere-services.com
-dbname   = '/saranettle$cocktailsdb'
+userpass = 'mysql://snettle:pato1117@'
+basedir = snettle.mysql.pythonanywhere-services.com
+dbname   = '/snettle$cocktailsdb'
 app.config['SQLALCHEMY_DATABASE_URI'] = userpass + basedir + dbname
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
