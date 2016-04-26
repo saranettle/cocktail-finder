@@ -1,9 +1,6 @@
 import MySQLdb
 from flask import Flask, render_template, session, redirect, url_for
 from flask.ext.bootstrap import Bootstrap
-from flask.ext.wtf import Form
-from wtforms import StringField, SubmitField
-from wtforms.validators import Required
 from flask.ext.sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -11,14 +8,13 @@ app.config['SECRET_KEY'] = 'some secret string here'
 
 userpass = 'mysql://snettle:pato1117@'
 basedir = snettle.mysql.pythonanywhere-services.com
-dbname   = '/snettle$cocktailsdb'
+dbname = '/snettle$cocktailsdb'
 app.config['SQLALCHEMY_DATABASE_URI'] = userpass + basedir + dbname
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
-
 
 # each table in the database is a class
 class Cocktail(db.Model):
