@@ -1,5 +1,13 @@
 #Cocktail Finder
 
+**August 2024 Update**
+
+Hello! I am working on this application again, after 8 years. When I originally created this application, it was for a class to host on a specific website. Now, I would like to a: be able to run this application on my computer locally, and b: host this application on my personal website.
+
+I will continue to use a mySQL database to hold this data, and eventually I will add some functionality to allow users to add to the databse.
+
+**Original ReadME**
+
 Use the app here:
 
 http://snettle.pythonanywhere.com/
